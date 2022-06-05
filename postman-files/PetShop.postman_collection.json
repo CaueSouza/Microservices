@@ -1,0 +1,193 @@
+{
+	"info": {
+		"_postman_id": "a91c0c05-cf63-4cf0-8f90-b7bfb8f4f128",
+		"name": "PetShop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21101714"
+	},
+	"item": [
+		{
+			"name": "Pessoas",
+			"item": [
+				{
+					"name": "Consultar todas as pessoas",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{pessoas_url}}/api/pessoas/",
+							"host": [
+								"{{pessoas_url}}"
+							],
+							"path": [
+								"api",
+								"pessoas",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar pessoa por id",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{pessoas_url}}/api/pessoas/6",
+							"host": [
+								"{{pessoas_url}}"
+							],
+							"path": [
+								"api",
+								"pessoas",
+								"6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar pessoa",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"nome\": \"caue\",\n    \"sobrenome\": \"souza\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{pessoas_url}}/api/pessoas",
+							"host": [
+								"{{pessoas_url}}"
+							],
+							"path": [
+								"api",
+								"pessoas"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Remover pessoa",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{pessoas_url}}/api/pessoas/1",
+							"host": [
+								"{{pessoas_url}}"
+							],
+							"path": [
+								"api",
+								"pessoas",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Animais",
+			"item": [
+				{
+					"name": "Consultar todos os animais",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{animais_url}}/api/animais",
+							"host": [
+								"{{animais_url}}"
+							],
+							"path": [
+								"api",
+								"animais"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cadastrar animais",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"dono\": 6,\n    \"nome\": \"mel\",\n    \"idade\": 4,\n    \"raca\": \"gata\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{animais_url}}/api/animais",
+							"host": [
+								"{{animais_url}}"
+							],
+							"path": [
+								"api",
+								"animais"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Consultar animais por dono",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{animais_url}}/api/animais/6/lista",
+							"host": [
+								"{{animais_url}}"
+							],
+							"path": [
+								"api",
+								"animais",
+								"6",
+								"lista"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
