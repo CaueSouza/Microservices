@@ -1,6 +1,6 @@
 # Microservices
 
-Developed this backend solutions while studying Microservices backend structure
+Developed this backend solution while studying Microservices backend structure
 
 ## Running project
 
